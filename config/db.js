@@ -12,9 +12,6 @@ const config = {
     queueLimit: 0
 };
 
-// DEBUG: mostrar sólo lo necesario (no imprimimos la contraseña)
-console.log('DB config:', { host: config.host, port: config.port, user: config.user, database: config.database });
-
 const pool = mysql.createPool(config);
 
 module.exports = pool
